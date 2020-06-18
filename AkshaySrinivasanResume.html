@@ -257,8 +257,8 @@
 
         .myworkethiccaption {
             background-color: rgba(0, 62, 86, 0.90);
-            color: white;
             padding: 20px;
+            color: white;
             font-size: 25px;
             width: 70%;
             display: inline-block;
@@ -287,6 +287,21 @@
             display: inline-block;
             width: 70%;
             padding: 30px;
+        }
+
+        .svg-icon {
+            display: inline-flex;
+            align-self: center;
+        }
+
+        .svg-icon svg {
+            height: 1em;
+            width: 1em;
+        }
+
+        .svg-icon.svg-baseline svg {
+            top: .125em;
+            position: relative;
         }
     </style>
     <script>
@@ -380,8 +395,9 @@
                     <a href="https://www.gimp.org/" target="_blank">GIMP (Graphical Image Manipulation Program)</a>,
                     <a href="https://www.w3schools.com/html/" target="_blank">HTML</a>,
                     <a href="https://www.w3schools.com/css/" target="_blank">CSS</a>,
+                    <a href="https://www.w3schools.com/graphics/svg_intro.asp" target="_blank">SVG (Scalable Vector Graphics)</a>,
                     <a href="https://www.w3schools.com/js/" target="_blank">Javascript</a>,
-                    <a href="https://www.w3schools.com/bootstrap/" target="_blank">Bootstrap</a> and 
+                    <a href="https://www.w3schools.com/bootstrap/" target="_blank">Bootstrap</a> and
                     <a href="https://jquery.com/" target="_blank">jQuery</a>.
                     I have public open source code and articles, links are provided in this web page,
                     so my skills can be evaluated without doing basic memory testing in interview phases.
@@ -653,11 +669,12 @@
         </div>
         <div id="mycurrenttechnologystacklist" class="row collapse">
             <div class="col mycurrenttechnologystacklist">
-                <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor" target="_blank">Blazor</a> Server-side, 
+                <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor" target="_blank">Blazor</a> Server-side,
                 <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a>,
                 <a href="https://docs.microsoft.com/en-us/dotnet/core/" target="_blank">.NET Core</a>,
                 <a href="https://www.w3schools.com/html/" target="_blank">HTML</a>,
                 <a href="https://www.w3schools.com/css/" target="_blank">CSS</a>,
+                <a href="https://www.w3schools.com/graphics/svg_intro.asp" target="_blank">SVG (Scalable Vector Graphics)</a>,
                 <a href="https://www.w3schools.com/bootstrap/" target="_blank">Bootstrap</a>,
                 <a href="https://www.w3schools.com/js/" target="_blank">Javascript</a>,
                 <a href="https://docs.microsoft.com/en-us/aspnet/core/blazor/call-javascript-from-dotnet?view=aspnetcore-3.1" target="_blank">JsInterop</a>,
@@ -1741,88 +1758,96 @@
         <div class="row">
             <div class="col myworkethiccaption">
                 Work Ethic
-                <i id="myworkethicsvg" class="far fa-arrow-alt-circle-down allexpandcollapseiconbuttons"
-                   title="Show details of Work Ethic."
-                   data-toggle="collapse" data-target="#myworkethicdiv"></i>
+                <!--
+    <i id="myworkethicsvg" class="far fa-arrow-alt-circle-down allexpandcollapseiconbuttons"
+       title="Show details of Work Ethic."
+       data-toggle="collapse" data-target="#myworkethicdiv"></i>
+        -->
+                <svg id="myworkethicsvg" class="mytestsvgexpandcollapseicon" width="34" height="34" transform="scale(0.735 0.735)"
+                     title="Show details of Work Ethic." data-toggle="collapse" data-target="#myworkethicdiv">
+                    <circle cx="17" cy="17" r="15" stroke="white" stroke-width="4" fill="none" />
+                    <path d="M17 28 L8 18 L14 18 L14 8 L20 8 L20 18 L26 18 Z" fill="white" />
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>
+            </div>
+            <div id="myworkethicdiv" class="row collapse">
+                <div class="col myworkethiclist">
+                    <ul>
+                        <li>
+                            When I am coding or designing a software system or architecting a solution, I think
+                            of the holistic business and all stakeholders when doing so. I prefer to understand
+                            and not just memorize and use. I prefer to use my creativity, my strength, to come
+                            up with my unique solutions.
+                        </li>
+                        <li>
+                            Most people in the industry copy-paste code. I prefer to understand the system via
+                            the code example and then write unique code on my own. I make unique images on my
+                            own and will not directly download and use any image from the internet without
+                            modifying it unless it is a logo. I author all my images with
+                            <a href="https://www.gimp.org/" target="_blank">GIMP (Graphical Image Manipulation Program)</a>
+                            and demand unique artwork from colleagues I work with who are graphic artists.
+                        </li>
+                        <li>
+                            Everything I have done has been self-taught throughout my career as I can quickly
+                            understand software, hardware and networking IT systems since childhood on my own.
+                        </li>
+                        <li>
+                            I am very passionate about software. In 1983 I got a programmable calculator called
+                            the Sharp PC1500. It came with the Basic programming language and a slim manual that
+                            listed out the supported words of the Basic programming language. Nobody I knew was
+                            familiar with programming. Figuring out how to make video games on my own, I knew
+                            these small machines were the future. One could easily create any of your ideas on
+                            these machines with the greatest of ease. I was advised by my father to do Electrical
+                            Engineering since there were not many jobs for programming. I knew it was a matter
+                            of time before there would be. I turned out to be right. Since then, I have pursued
+                            making creative software, whether I can monetize or be rewarded in any way or not.
+                            I always name my computers after fantasy characters like one would call a pet one
+                            loves. Since I love software, I do my best on my own always with or without
+                            supervision or direction.
+                        </li>
+                        <li>
+                            Willing to be background-checked on all my work. Have been background-checked for
+                            all my jobs in India. Always ready to be questioned about approach, methodology and
+                            am open to both positive and negative criticism and keep a positive attitude even in
+                            a negative work environment without letting my work suffer by getting affected. I am
+                            honest and transparent.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col myeducationcaption">
+                    Education
+                    <i id="myeducationsvg" class="far fa-arrow-alt-circle-down allexpandcollapseiconbuttons"
+                       title="Show details of Education."
+                       data-toggle="collapse" data-target="#myeducationdiv"></i>
+                </div>
+            </div>
+            <div id="myeducationdiv" class="row collapse">
+                <div class="col myeducationlist">
+                    <p>
+                        College<br />
+                        <a href="https://www.kettering.edu/">GMI Engineering &amp; Management Institute (Kettering University)</a>, Flint, Michigan, U.S.A.<br />
+                        Bachelor of Science in Electrical Engineering<br />
+                        1990 - 1996 (Includes Co-op full time work)<br />
+                    </p>
+                    <hr />
+                    <p>
+                        Junior College (11th &amp; 12th Standard)<br />
+                        <a href="https://www.kccollege.edu.in/">K.C. College</a> (Kishinchand Chellaram College), Mumbai, India<br />
+                        H.S.C. (Electronics Specialization)
+                        March 1987 - March 1989
+                    </p>
+                    <hr />
+                    <p>
+                        School (Jr. Kindergarten - 10th Standard)<br />
+                        <a href="https://bombayscottish.in/mahim/home.php">Bombay Scottish School</a>, Mumbai, India
+                        I.C.S.E
+                        March 1974 - March 1987
+                    </p>
+                </div>
             </div>
         </div>
-        <div id="myworkethicdiv" class="row collapse">
-            <div class="col myworkethiclist">
-                <ul>
-                    <li>
-                        When I am coding or designing a software system or architecting a solution, I think 
-                        of the holistic business and all stakeholders when doing so. I prefer to understand 
-                        and not just memorize and use. I prefer to use my creativity, my strength, to come 
-                        up with my unique solutions.
-                    </li>
-                    <li>
-                        Most people in the industry copy-paste code. I prefer to understand the system via 
-                        the code example and then write unique code on my own. I make unique images on my 
-                        own and will not directly download and use any image from the internet without 
-                        modifying it unless it is a logo. I author all my images with
-                        <a href="https://www.gimp.org/" target="_blank">GIMP (Graphical Image Manipulation Program)</a>
-                        and demand unique artwork from colleagues I work with who are graphic artists.
-                    </li>
-                    <li>
-                        Everything I have done has been self-taught throughout my career as I can quickly
-                        understand software, hardware and networking IT systems since childhood on my own.
-                    </li>
-                    <li>
-                        I am very passionate about software. In 1983 I got a programmable calculator called 
-                        the Sharp PC1500. It came with the Basic programming language and a slim manual that 
-                        listed out the supported words of the Basic programming language. Nobody I knew was 
-                        familiar with programming. Figuring out how to make video games on my own, I knew 
-                        these small machines were the future. One could easily create any of your ideas on
-                        these machines with the greatest of ease. I was advised by my father to do Electrical
-                        Engineering since there were not many jobs for programming. I knew it was a matter 
-                        of time before there would be. I turned out to be right. Since then, I have pursued 
-                        making creative software, whether I can monetize or be rewarded in any way or not.
-                        I always name my computers after fantasy characters like one would call a pet one 
-                        loves. Since I love software, I do my best on my own always with or without 
-                        supervision or direction.
-                    </li>
-                    <li>
-                        Willing to be background-checked on all my work. Have been background-checked for
-                        all my jobs in India. Always ready to be questioned about approach, methodology and
-                        am open to both positive and negative criticism and keep a positive attitude even in
-                        a negative work environment without letting my work suffer by getting affected. I am
-                        honest and transparent.
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col myeducationcaption">
-                Education
-                <i id="myeducationsvg" class="far fa-arrow-alt-circle-down allexpandcollapseiconbuttons"
-                   title="Show details of Education."
-                   data-toggle="collapse" data-target="#myeducationdiv"></i>
-            </div>
-        </div>
-        <div id="myeducationdiv" class="row collapse">
-            <div class="col myeducationlist">
-                <p>
-                    College<br />
-                    <a href="https://www.kettering.edu/">GMI Engineering &amp; Management Institute (Kettering University)</a>, Flint, Michigan, U.S.A.<br />
-                    Bachelor of Science in Electrical Engineering<br />
-                    1990 - 1996 (Includes Co-op full time work)<br />
-                </p>
-                <hr />
-                <p>
-                    Junior College (11th &amp; 12th Standard)<br />
-                    <a href="https://www.kccollege.edu.in/">K.C. College</a> (Kishinchand Chellaram College), Mumbai, India<br />
-                    H.S.C. (Electronics Specialization)
-                    March 1987 - March 1989
-                </p>
-                <hr />
-                <p>
-                    School (Jr. Kindergarten - 10th Standard)<br />
-                    <a href="https://bombayscottish.in/mahim/home.php">Bombay Scottish School</a>, Mumbai, India
-                    I.C.S.E
-                    March 1974 - March 1987
-                </p>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+    </body>
+    </html>
